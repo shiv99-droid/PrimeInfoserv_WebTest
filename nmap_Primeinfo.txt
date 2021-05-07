@@ -1,0 +1,161 @@
+# Nmap 7.91 scan initiated Fri May  7 00:13:33 2021 as: nmap -T4 -A -vv -sV -sC -oN /home/shiv/Desktop/nmap.txt primeinfoserv.com
+
+Not shown: 995 filtered ports
+Reason: 995 no-responses
+PORT     STATE SERVICE  REASON          VERSION
+53/tcp   open  domain   syn-ack ttl 128 ISC BIND 9.16.13
+| dns-nsid: 
+|_  bind.version: 9.16.13
+80/tcp   open  http     syn-ack ttl 128 Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: 500 Internal Server Error
+443/tcp  open  ssl/http syn-ack ttl 128 Cloudflare http proxy
+|_http-favicon: Unknown favicon MD5: A06F64BC920D1A04490A099855A7921E
+|_http-generator: Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: cloudflare
+|_http-title: Prime Infoserv LLP - VAPT ISO 27001 Kolkata \xE2\x80\x93 CERT-In Empane...
+| ssl-cert: Subject: commonName=www.primeinfoserv.nrw.wvi.mybluehostin.me
+| Subject Alternative Name: DNS:autodiscover.primeinfoserv.com, DNS:cpanel.primeinfoserv.com, DNS:cpcalendars.primeinfoserv.com, DNS:cpcontacts.primeinfoserv.com, DNS:mail.primeinfoserv.com, DNS:primeinfoserv.com, DNS:primeinfoserv.nrw.wvi.mybluehostin.me, DNS:webdisk.primeinfoserv.com, DNS:webmail.primeinfoserv.com, DNS:www.primeinfoserv.com, DNS:www.primeinfoserv.nrw.wvi.mybluehostin.me
+| Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-04-30T11:11:51
+| Not valid after:  2021-07-29T11:11:51
+| MD5:   1201 59e8 91b4 48f5 34a4 2797 053a 418f
+| SHA-1: 39a2 e99b 821c 34f8 1379 0456 88ff 531b fa7c 6ebb
+| -----BEGIN CERTIFICATE-----
+| MIIGczCCBVugAwIBAgISBEkeDNwaDwJlWTXXLzxYDheLMA0GCSqGSIb3DQEBCwUA
+| MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+| EwJSMzAeFw0yMTA0MzAxMTExNTFaFw0yMTA3MjkxMTExNTFaMDQxMjAwBgNVBAMT
+| KXd3dy5wcmltZWluZm9zZXJ2Lm5ydy53dmkubXlibHVlaG9zdGluLm1lMIIBIjAN
+| BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqEGYEehsXYt1/7QbLMCsyPDmprZx
+| 7bZXGqJnVVFvEXc1BMQTXmN6ydvX+ABggJjCQ+ZaJMvRIE0UxnJi5cGv9x9hyQ+n
+| +INxqflRPL0mES0/r5NbufkBg9iNz0jZFcz1+Quu4nqfxmJu8mMSREyYmDixZJto
+| nTMeIv8fY20lT0VYBM8PsB+0d2wCq0UuSjIWSpPXeIMdROkmn2UMY6vDRhQPfN5N
+| JTO4wUpubVyUsnACStC26P1uu0a/3uyUMCmtCNxdzzFUoeYubglneN+REamqnwk8
+| YakOvuRgFskzVynh/WwjB4VolFX6KFIsdZ/yFYWYaifLeRSDa/o7u9rY3QIDAQAB
+| o4IDfzCCA3swDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr
+| BgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTcjyIWbT3c/iIAdHD5mAcT
+| G1NqaDAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcB
+| AQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEF
+| BQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzCCAU4GA1UdEQSCAUUwggFBgh5h
+| dXRvZGlzY292ZXIucHJpbWVpbmZvc2Vydi5jb22CGGNwYW5lbC5wcmltZWluZm9z
+| ZXJ2LmNvbYIdY3BjYWxlbmRhcnMucHJpbWVpbmZvc2Vydi5jb22CHGNwY29udGFj
+| dHMucHJpbWVpbmZvc2Vydi5jb22CFm1haWwucHJpbWVpbmZvc2Vydi5jb22CEXBy
+| aW1laW5mb3NlcnYuY29tgiVwcmltZWluZm9zZXJ2Lm5ydy53dmkubXlibHVlaG9z
+| dGluLm1lghl3ZWJkaXNrLnByaW1laW5mb3NlcnYuY29tghl3ZWJtYWlsLnByaW1l
+| aW5mb3NlcnYuY29tghV3d3cucHJpbWVpbmZvc2Vydi5jb22CKXd3dy5wcmltZWlu
+| Zm9zZXJ2Lm5ydy53dmkubXlibHVlaG9zdGluLm1lMEwGA1UdIARFMEMwCAYGZ4EM
+| AQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0
+| c2VuY3J5cHQub3JnMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYARJRlLrDuzq/E
+| QAfYqP4owNrmgr7YyzG1P9MzlrW2gagAAAF5IrE+5wAABAMARzBFAiEAhvQwlGn9
+| sx7gCnRe/IQr+kjua1eu+FfqnMTtFpqNtDUCIF2cfHFqiD52jNVYS6QBqGS3Auia
+| /ExLGr9ewgAX/FA4AHUAfT7y+I//iFVoJMLAyp5SiXkrxQ54CX8uapdomX4i8NcA
+| AAF5IrE/AAAABAMARjBEAiAr9GfnY8DPXY7MxNvr4jl5AFi1Al51FqXbcg58rHmp
+| /QIgVNbo+HnNM4BcwiDElWMye4f4+zOmvst39XMbGVHi6RwwDQYJKoZIhvcNAQEL
+| BQADggEBAIxJYretYDoBhQPQ2aFM1dl9d1e1YrFNc+0piQTUHzXP35RvIigf3b1C
+| KsJDrZoLVdZDCaFlDmMKEGhVMEEgcR6iCIMi17stcT19x+/x1bEqG3qjfr1W8riV
+| yFHlshOB84KQZLrtPDX4JT1QGSSNDZodS31HCeR744TlB1q0ckBHByXw8i1W2WhZ
+| nSmNLGnGc4WCXBINnO4i912Lho3QQCn4nm10JRoDwjxZ1hG29+acHDuSRecyCKkt
+| K/8t5NUErQCAMXRXb+i12JxLbmLeJcy31BWv6IYUa7I+ERGTxVrzZnhLWHuN0bxj
+| IAwywnx/TYATmFxPus6uj6QiDmUEV5o=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-05-06T18:45:14+00:00; 0s from scanner time.
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+8080/tcp open  http     syn-ack ttl 128 Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: 521 Origin Down
+8443/tcp open  ssl/http syn-ack ttl 128 Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: 521 Origin Down
+| ssl-cert: Subject: commonName=www.primeinfoserv.nrw.wvi.mybluehostin.me
+| Subject Alternative Name: DNS:autodiscover.primeinfoserv.com, DNS:cpanel.primeinfoserv.com, DNS:cpcalendars.primeinfoserv.com, DNS:cpcontacts.primeinfoserv.com, DNS:mail.primeinfoserv.com, DNS:primeinfoserv.com, DNS:primeinfoserv.nrw.wvi.mybluehostin.me, DNS:webdisk.primeinfoserv.com, DNS:webmail.primeinfoserv.com, DNS:www.primeinfoserv.com, DNS:www.primeinfoserv.nrw.wvi.mybluehostin.me
+| Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-04-30T11:11:51
+| Not valid after:  2021-07-29T11:11:51
+| MD5:   1201 59e8 91b4 48f5 34a4 2797 053a 418f
+| SHA-1: 39a2 e99b 821c 34f8 1379 0456 88ff 531b fa7c 6ebb
+| -----BEGIN CERTIFICATE-----
+| MIIGczCCBVugAwIBAgISBEkeDNwaDwJlWTXXLzxYDheLMA0GCSqGSIb3DQEBCwUA
+| MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+| EwJSMzAeFw0yMTA0MzAxMTExNTFaFw0yMTA3MjkxMTExNTFaMDQxMjAwBgNVBAMT
+| KXd3dy5wcmltZWluZm9zZXJ2Lm5ydy53dmkubXlibHVlaG9zdGluLm1lMIIBIjAN
+| BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqEGYEehsXYt1/7QbLMCsyPDmprZx
+| 7bZXGqJnVVFvEXc1BMQTXmN6ydvX+ABggJjCQ+ZaJMvRIE0UxnJi5cGv9x9hyQ+n
+| +INxqflRPL0mES0/r5NbufkBg9iNz0jZFcz1+Quu4nqfxmJu8mMSREyYmDixZJto
+| nTMeIv8fY20lT0VYBM8PsB+0d2wCq0UuSjIWSpPXeIMdROkmn2UMY6vDRhQPfN5N
+| JTO4wUpubVyUsnACStC26P1uu0a/3uyUMCmtCNxdzzFUoeYubglneN+REamqnwk8
+| YakOvuRgFskzVynh/WwjB4VolFX6KFIsdZ/yFYWYaifLeRSDa/o7u9rY3QIDAQAB
+| o4IDfzCCA3swDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr
+| BgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTcjyIWbT3c/iIAdHD5mAcT
+| G1NqaDAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcB
+| AQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEF
+| BQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzCCAU4GA1UdEQSCAUUwggFBgh5h
+| dXRvZGlzY292ZXIucHJpbWVpbmZvc2Vydi5jb22CGGNwYW5lbC5wcmltZWluZm9z
+| ZXJ2LmNvbYIdY3BjYWxlbmRhcnMucHJpbWVpbmZvc2Vydi5jb22CHGNwY29udGFj
+| dHMucHJpbWVpbmZvc2Vydi5jb22CFm1haWwucHJpbWVpbmZvc2Vydi5jb22CEXBy
+| aW1laW5mb3NlcnYuY29tgiVwcmltZWluZm9zZXJ2Lm5ydy53dmkubXlibHVlaG9z
+| dGluLm1lghl3ZWJkaXNrLnByaW1laW5mb3NlcnYuY29tghl3ZWJtYWlsLnByaW1l
+| aW5mb3NlcnYuY29tghV3d3cucHJpbWVpbmZvc2Vydi5jb22CKXd3dy5wcmltZWlu
+| Zm9zZXJ2Lm5ydy53dmkubXlibHVlaG9zdGluLm1lMEwGA1UdIARFMEMwCAYGZ4EM
+| AQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0
+| c2VuY3J5cHQub3JnMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYARJRlLrDuzq/E
+| QAfYqP4owNrmgr7YyzG1P9MzlrW2gagAAAF5IrE+5wAABAMARzBFAiEAhvQwlGn9
+| sx7gCnRe/IQr+kjua1eu+FfqnMTtFpqNtDUCIF2cfHFqiD52jNVYS6QBqGS3Auia
+| /ExLGr9ewgAX/FA4AHUAfT7y+I//iFVoJMLAyp5SiXkrxQ54CX8uapdomX4i8NcA
+| AAF5IrE/AAAABAMARjBEAiAr9GfnY8DPXY7MxNvr4jl5AFi1Al51FqXbcg58rHmp
+| /QIgVNbo+HnNM4BcwiDElWMye4f4+zOmvst39XMbGVHi6RwwDQYJKoZIhvcNAQEL
+| BQADggEBAIxJYretYDoBhQPQ2aFM1dl9d1e1YrFNc+0piQTUHzXP35RvIigf3b1C
+| KsJDrZoLVdZDCaFlDmMKEGhVMEEgcR6iCIMi17stcT19x+/x1bEqG3qjfr1W8riV
+| yFHlshOB84KQZLrtPDX4JT1QGSSNDZodS31HCeR744TlB1q0ckBHByXw8i1W2WhZ
+| nSmNLGnGc4WCXBINnO4i912Lho3QQCn4nm10JRoDwjxZ1hG29+acHDuSRecyCKkt
+| K/8t5NUErQCAMXRXb+i12JxLbmLeJcy31BWv6IYUa7I+ERGTxVrzZnhLWHuN0bxj
+| IAwywnx/TYATmFxPus6uj6QiDmUEV5o=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-05-06T18:45:14+00:00; 0s from scanner time.
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|general purpose
+Running: Actiontec embedded, Linux 2.4.X|3.X
+OS CPE: cpe:/h:actiontec:mi424wr-gen3i cpe:/o:linux:linux_kernel cpe:/o:linux:linux_kernel:2.4.37 cpe:/o:linux:linux_kernel:3.2
+OS details: Actiontec MI424WR-GEN3I WAP, DD-WRT v24-sp2 (Linux 2.4.37), Linux 3.2
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=5/7%OT=53%CT=%CU=%PV=N%DS=2%DC=T%G=N%TM=6094393B%P=x86
+OS:_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=108%II=I%TS=U)OPS(O1=M5B4%O2=M5B4%
+OS:O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=F
+OS:AF0%W6=FAF0)ECN(R=Y%DF=N%TG=80%W=FAF0%O=M5B4%CC=N%Q=)T1(R=Y%DF=N%TG=80%S
+OS:=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=N%TG=80%W=FAF0%S=O%A=S+%F=AS%O=M5B
+OS:4%RD=0%Q=)T4(R=Y%DF=N%TG=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)T6(R=Y%DF=N%TG
+OS:=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)U1(R=N)IE(R=Y%DFI=N%TG=80%CD=S)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.72 ms 192.168.27.2
+2   0.48 ms host77.ipowerweb.com (66.235.200.113)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May  7 00:15:15 2021 -- 1 IP address (1 host up) scanned in 103.46 seconds

@@ -1,0 +1,81 @@
+# Nmap 7.91 scan initiated Fri May  7 00:19:29 2021 as: nmap -T4 -oN /home/shiv/Desktop/nmap_script.txt --script=vuln primeinfoserv.com
+Nmap scan report for primeinfoserv.com (66.235.200.113)
+Host is up (0.032s latency).
+rDNS record for 66.235.200.113: host77.ipowerweb.com
+Not shown: 995 filtered ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+443/tcp  open  https
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=primeinfoserv.com
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://primeinfoserv.com:443/
+|     Form id: quik-search-remove
+|     Form action: #
+|     
+|     Path: https://primeinfoserv.com:443/clients/
+|     Form id: quik-search-remove
+|     Form action: #
+|     
+|     Path: https://primeinfoserv.com:443/downloads/
+|     Form id: quik-search-remove
+|     Form action: #
+|     
+|     Path: https://primeinfoserv.com:443/blog/
+|     Form id: quik-search-remove
+|     Form action: #
+|     
+|     Path: https://primeinfoserv.com:443/blog/
+|     Form id: 
+|     Form action: https://primeinfoserv.com
+|     
+|     Path: https://primeinfoserv.com:443/events/
+|     Form id: quik-search-remove
+|     Form action: #
+|     
+|     Path: https://primeinfoserv.com:443/about-us/
+|     Form id: quik-search-remove
+|_    Form action: #
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /blog/: Blog
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_sslv2-drown: 
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+|_sslv2-drown: 
+
+# Nmap done at Fri May  7 00:32:54 2021 -- 1 IP address (1 host up) scanned in 805.42 seconds
